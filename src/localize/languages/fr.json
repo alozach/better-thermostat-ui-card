@@ -11,6 +11,7 @@
         "disable_eco": "Desactiver mode eco",
         "disable_heat": "Desactiver mode chauffe",
         "disable_off": "Desactiver arret",
+        "disable_restore_preset": "Désactiver retour au planning",
         "eco_temperature": "Temperature Eco",
         "set_current_as_main": "Echanger temperature cible avec temperature locale"
       }

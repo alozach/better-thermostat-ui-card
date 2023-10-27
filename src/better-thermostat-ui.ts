@@ -34,7 +34,8 @@ import {
   mdiPlus,
   mdiAirConditioner,
   mdiWeatherWindy,
-  mdiSunSnowflakeVariant
+  mdiSunSnowflakeVariant,
+  mdiHistory
 } from "@mdi/js";
 
 import {
@@ -74,7 +75,8 @@ const modeIcons: {
   summer: mdiSunThermometer,
   temperature:  mdiThermometer,
   humidity: mdiWaterPercent,
-  ok: mdiAirConditioner
+  ok: mdiAirConditioner,
+  restore: mdiHistory
 };
 type Target = "value" | "low" | "high";
 
@@ -726,6 +728,10 @@ export class BetterThermostatUi extends LitElement implements LovelaceCard {
               entity_id: this._config!.entity,
           });
         }
+    } else if ((e.currentTarget as any).mode === "restore") {
+      this.hass!.callService("versatile_thermostat", "restore_preset_mode", {
+          entity_id: this._config!.entity,
+      });
     } else {
       const saved_temp = this?.stateObj?.attributes?.saved_temperature || null;
       if (saved_temp !== null) {
@@ -964,6 +970,9 @@ export class BetterThermostatUi extends LitElement implements LovelaceCard {
                 ${this?._config?.disable_off ? html `` : this._renderIcon("off", this.mode)}
               `:
               svg`
+                ${(this?._config?.disable_restore_preset ||
+                  !this?.stateObj?.attributes?.preset_mode ||
+                  this?.stateObj?.attributes?.preset_mode !== "none") ? html`` : this._renderIcon("restore", this.mode)}
                 ${this.modes.map((mode) => {
                   if(this._config?.disable_heat && (mode === "heat" || mode === "heat_cool")) return html ``;
                   if(this._config?.disable_eco && mode === "eco") return html ``;

@@ -14,6 +14,7 @@
         "disable_menu": "Disable menu",
         "disable_battery_warning": "Disable battery warning",
         "disable_buttons": "Disable plus/minus buttons",
+        "disable_restore_preset": "Disable restore preset",
         "eco_temperature": "Eco temperature",
         "set_current_as_main": "Swap target with current temperature places"
       }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function t(t,e,i,n){var o,r=arguments.length,s=r<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,i,n);else for(var a=t.length-1;a>=0;a--)(o=t[a])&&(s=(r<3?o(s):r>3?o(e,i,s):o(e,i))||s);return r>3&&s&&Object.defineProperty(e,i,s),s}"function"==typeof SuppressedError&&SuppressedError;
 /**
  * @license
@@ -906,3 +907,5 @@ const Io=270;const Ro=new Set(["ArrowRight","ArrowUp","ArrowLeft","ArrowDown","P
                 @value-changed=${this._valueChanged}
             ></ha-form>
         `}_valueChanged(t){hi(this,"config-changed",{config:t.detail.value}),hi(this,"hass",{config:t.detail.value})}};t([dt()],Go.prototype,"_config",void 0),t([ut({attribute:!1})],Go.prototype,"hass",void 0),Go=t([lt("better-thermostat-ui-card-editor")],Go);var Qo=Object.freeze({__proto__:null,get ClimateCardEditor(){return Go}});export{Zo as BetterThermostatUi,Wo as registerCustomCard};
+=======
+>>>>>>> 3cd73a7 (Add restore preset button)
