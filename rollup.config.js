@@ -62,7 +62,7 @@ export default [
         input: "src/better-thermostat-ui.ts",
         output: {
             inlineDynamicImports: true,
-            file: "dist/better-thermostat-ui-card.js",
+            file: "dist/my-better-thermostat-ui-card.js",
             format: "es",
         },
         plugins,

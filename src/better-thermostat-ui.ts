@@ -96,14 +96,14 @@ export function registerCustomCard(params: RegisterCardParams) {
 
 /* eslint no-console: 0 */
 console.info(
-  `%c  BetterThermostatUI-CARD \n%c  version: ${CARD_VERSION}    `,
+  `%c  MyBetterThermostatUI-CARD \n%c  version: ${CARD_VERSION}    `,
   'color: orange; font-weight: bold; background: black',
   'color: white; font-weight: bold; background: dimgray',
 );
 
 registerCustomCard({
   type: "better-thermostat-ui-card",
-  name: "Better Thermostat Climate Card",
+  name: "My Better Thermostat Climate Card",
   description: "Card for climate entity",
 });
 

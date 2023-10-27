@@ -1,7 +1,7 @@
 {
-  "name": "better-thermostat-ui-card",
+  "name": "my-better-thermostat-ui-card",
   "version": "2.2.0",
-  "description": "Lovelace better-thermostat-ui",
+  "description": "Lovelace my-better-thermostat-ui",
   "keywords": [
     "home-assistant",
     "homeassistant",
@@ -9,12 +9,11 @@
     "automation",
     "lovelace",
     "custom-cards",
-    "better-thermostat",
-    "better_thermostat"
+    "my_versatile_thermostat"
   ],
-  "module": "better-thermostat-ui-card.js",
-  "repository": "https://github.com/KartoffelToby/better-thermostat-ui-card",
-  "author": "Tobias Haber",
+  "module": "my-better-thermostat-ui-card.js",
+  "repository": "https://github.com/alozach/better-thermostat-ui-card",
+  "author": "Tobias Haber / Aymeric Lozac'h",
   "type": "module",
   "scripts": {
     "start": "rollup -c --watch",
